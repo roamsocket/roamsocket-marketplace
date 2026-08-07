@@ -10,7 +10,7 @@ marketplace repos** in CodeSocket → Settings → Marketplace.
 ## Live catalog URL
 
 ```
-https://raw.githubusercontent.com/kind365/codesocket-marketplace/main/catalog.json
+https://raw.githubusercontent.com/codesocket-ai/codesocket-marketplace/main/catalog.json
 ```
 
 Edit `catalog.json` on `main` and push — no App Store / desktop release required

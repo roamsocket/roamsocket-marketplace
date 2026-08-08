@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-08-07",
-  "name": "CodeSocket Official Marketplace",
+  "name": "RoamSocket Official Marketplace",
   "description": "Owner-controlled catalog for connectors, skills, plugins, and on-device Metal models. Edit this file on main to update all CodeSocket clients.",
   "connectors": [
     {

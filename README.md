@@ -1,16 +1,16 @@
-# CodeSocket Marketplace
+# RoamSocket Marketplace
 
-**Official** catalog for [CodeSocket](https://github.com/codesocket-ai/codesocket-mobile):
+**Official** catalog for [RoamSocket](https://github.com/roamsocket/roamsocket-mobile):
 connectors, skills, plugins, and on-device Metal (MLX) models.
 
 Clients (iOS + desktop) fetch this repo’s `catalog.json`, cache it, and fall
 back to bundled defaults when offline. **Anyone can also add their own
-marketplace repos** in CodeSocket → Settings → Marketplace.
+marketplace repos** in RoamSocket → Settings → Marketplace.
 
 ## Live catalog URL
 
 ```
-https://raw.githubusercontent.com/codesocket-ai/codesocket-marketplace/main/catalog.json
+https://raw.githubusercontent.com/roamsocket-ai/roamsocket-marketplace/main/catalog.json
 ```
 
 Edit `catalog.json` on `main` and push — no App Store / desktop release required
@@ -34,7 +34,7 @@ for catalog-only updates.
 
 ### 1. Create a GitHub repo
 
-Any name works (e.g. `my-codesocket-marketplace`). Public repos need no token.
+Any name works (e.g. `my-roamsocket-marketplace`). Public repos need no token.
 Private repos need a PAT with `contents:read` for client fetches.
 
 ### 2. Add `catalog.json`
@@ -151,7 +151,7 @@ Prefer 4-bit MLX hubs. Keep phone picks roughly ≤ 4B unless marked `legacy` /
 1. Commit + push to the branch clients track (usually `main`).
 2. Copy the **raw** catalog URL, e.g.  
    `https://raw.githubusercontent.com/<owner>/<repo>/main/catalog.json`
-3. CodeSocket → **Settings → Marketplace → Add marketplace**
+3. RoamSocket → **Settings → Marketplace → Add marketplace**
 4. Tap **Refresh**
 
 You can enable **multiple** marketplaces. Order: official default first, then
@@ -179,11 +179,11 @@ npx --yes serve . -p 8799
 | **This marketplace** | Project owner + community forks | Public discovery catalog |
 | User **skills** repo | End user | Their `SKILL.md` files |
 | User **MCP** repo | End user | Their `.mcp.json` connectors |
-| CodeSocket app | Product | Clients that consume catalogs |
+| RoamSoxket app | Product | Clients that consume catalogs |
 
 Marketplace = what people can **discover**. Skills/MCP repos = what they **own**.
 
 ## License
 
-MIT — same spirit as CodeSocket. Catalog entries may reference third-party models
+MIT — same spirit as RoamSocket Catalog entries may reference third-party models
 (e.g. Hugging Face hubs); those remain under their own licenses.
